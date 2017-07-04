@@ -1,0 +1,187 @@
+/* Css file  */
+@import url( styles_content_new.css );
+body
+{
+	margin:20px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #FFFFFF ;
+	margin: 13px;
+	scrollbar-highlight-color: buttonface;
+	scrollbar-shadow-color: buttonface;
+	scrollbar-3dlight-color: buttonhighlight;
+	scrollbar-track-color: #B2BFD2;
+	scrollbar-darkshadow-color: buttonshadow;
+	scrollbar-arrow-color: #596579;
+}
+
+
+.style1{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom:20px;
+	border:1px solid #92B0DD;
+	background-color: #FFFFFf
+	}
+
+h5{margin: 1px;
+	background-color: #d1e1ff;
+	height: 24px;}
+.subtitle
+{
+	font: bold 14px Arial;
+	color: #596579;
+	letter-spacing: 2px;
+}
+
+.tabletitle
+{
+	font: bold 13px Arial;
+	color: #596579;
+	letter-spacing: 1px;
+	padding-top: 4px;
+}
+
+.tablecontent
+{
+	font: normal 12px Arial;
+	color: #596579;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #424B5A;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #424B5A;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #FF8800;
+}
+
+.page
+{
+	font: normal 12px Arial;
+	color: #596579;
+	padding: 5px;
+	text-align: center;
+
+}
+.page_wrap{
+	white-space:normal;
+}
+.page_wrap1{
+	white-space:wrap;
+
+}
+.input_text
+{
+	border: 1px solid #A7A6AA;
+	height: 17px;
+	font: bold 11px Arial;
+	color: #596579;
+	padding: 0 2px 0 2px;
+}
+
+select
+{
+	background: #FFF;
+	font: normal 12px Arial;
+	color: #596579;
+	height: 17px;
+}
+
+fieldset
+{
+	background: #B2BFD2;
+	font: normal 12px Arial;
+	color: #596579;
+	padding: 5px;
+	width: 99%;
+}
+
+legend
+{
+	background: #E6E9EF;
+	font: bold 13px Arial;
+	color: #596579;
+	border: 1px solid #859CAE;
+	padding: 2px 10px 3px 10px;
+}
+
+fieldset table td
+{ 
+   background: #E6E9EF;
+	font: normal 12px Arial;
+	color: #596579;
+	padding: 4px;
+}
+
+fieldset form
+{
+	margin: 5px 0 1px 0;
+}
+
+.input_area
+{
+	font: normal 12px Arial;
+	color: #596579;
+	height: 18px;
+	border: 1px solid #A7A6AA;
+	background: #F2F4F7;
+}
+
+.input_textarea
+{
+	font: normal 12px Arial;
+	color: #596579;
+	background: #F2F4F7;
+	scrollbar-highlight-color: buttonface;
+	scrollbar-shadow-color: buttonface;
+	scrollbar-3dlight-color: buttonhighlight;
+	scrollbar-track-color: #B2BFD2;
+	scrollbar-darkshadow-color: buttonshadow;
+	scrollbar-arrow-color: #596579;
+}
+
+.select_single
+{
+	height: 17px;
+	font: normal 12px Arial;
+	color: #596579;
+	background: #F2F4F7;
+}
+
+.menu_table
+{
+	
+	font: bold 12px Arial;
+	color: #FFF;
+}
+
+a.menu_table:link,a.menu_table:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+a.menu_table:hover
+{
+	color: #545F72;
+	text-decoration: none;
+}
+.red{
+	color: #FF0000;
+	/*by tianxin 200612-13 */
+}
+
+/*文章标题缩略*/
+.ellipsisContent{width:230px; clear:both;line-height:18px;text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.aa{width:230px;float:left;font-family: 宋体;font-size: 12px;color:#000000;}

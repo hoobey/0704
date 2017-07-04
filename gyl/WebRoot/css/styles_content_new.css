@@ -1,0 +1,105 @@
+.top_menu_table
+{
+	background: #E6E9EF;
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #859CAE;
+	border-bottom: 1px solid #859CAE;
+	border-left: 1px solid #FFF;
+	padding: 4px;
+	font: bold 12px Arial;
+}
+
+.new_table
+{
+	background: #EFEFEF ;
+	border: 1px dotted #859CAE;
+	padding: 4px;
+	font: normal 12px Arial;
+	color: #596579;
+}
+.new_table_title
+{
+	background: #E6E9EF;
+	border-bottom: 1px solid #859CAE;
+	font: bold 13px 'Arial Black','黑体';
+	padding-top: 7px;
+}
+.new_table_content
+{
+	padding: 8px;
+}
+.new_table_content_area
+{
+	font: normal 12px Arial;
+	color: #596579;
+	padding: 2px;
+}
+
+
+/*
+'Css by 
+*/
+/*导航条*/
+.navi_bar
+{
+	background-repeat: no-repeat;
+	padding-left:22px;
+	padding-top:6px;
+	background-color:#E6E9EF;
+}
+/*table背景*/
+.table_style
+{
+	background-color:#859CAE;
+}
+/*查询条件*/
+.td_search
+{
+	text-align:center;
+	background-color:#E6E9EF;
+	font: normal 12px Arial;	
+}
+/*表格的标题*/
+.td_title
+{
+	background-color:#e6e9ef;
+	font: normal 12px Arial;
+}
+/*表格的列表*/
+.td_list
+{
+	background-color:#F5F7FA;
+	font: normal 12px Arial;
+}
+/*表格底部*/
+.td_bottom
+{
+	background-color:#E6E9EF;
+}
+/*带背景色的右对齐*/
+.align_right
+{
+	text-align:right;
+	background-color:#F2F4F7;
+}
+/*翻页*/
+.page_jump
+{
+	background-color:#E6E9EF;
+}
+/*tab分页*/
+.tab_page
+{
+	text-align:center;
+	background-color:#E6E9EF;
+	font: bold 9px 'Arial Black','黑体';
+}
+/*text左对齐*/
+.td_left
+{
+  font: normal 12px Arial;
+	color: #596579;
+	padding: 5px;
+	text-align:left;
+	white-space:nowrap;
+}

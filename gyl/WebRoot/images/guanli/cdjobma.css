@@ -1,0 +1,27 @@
+* {margin:0px;padding:0px;}
+body {margin-top:0;text-align:left;font:14px ËÎÌå;color:#3e3e3e;line-height:20px;}
+input,select,textarea {font-size:13px;color:#3e3e3e}
+td{font-size:14px;color:#3e3e3e;line-height:20px;}
+img {border:none;}
+
+a:link    {text-decoration:underline;color:#112482;}
+a:visited {text-decoration:underline;color:#112482;}
+a:active  {text-decoration:underline;color:#112482;}
+a:hover   {text-decoration:underline; color:#f60;}
+
+
+/*Á´½Ó*/
+.abu:link    {color:#CCFF66;text-decoration:underline;}
+.abu:visited {color:#CCFF66;text-decoration:underline;}
+.abu:active  {color:#00FF33;text-decoration:underline;}
+.abu:hover   {color:#FFFFCC;text-decoration:underline;}
+
+/*===¶¥Ò³=============================================================*/
+.td_mu{padding-top:20px;padding-right:5px;color:#ffffff;text-align:right;font-size:13px;}
+.td_dh{height:26;color:#ffffff;font-size:13px;}
+.td_dhright{height:26;padding-right:5px;text-align:right;color:#ffffff;font-size:13px;}
+
+/*===²Ëµ¥Ò³=============================================================*/
+.td_lb{padding-left:10px;cursor:hand;height:29;background:#B9DDFE;BORDER-top: #DCEDFC 2px solid;BORDER-bottom: #A5B7DC 1px solid;BORDER-right: #6666FF; 1px solid;color:#CC3300;}
+.td_ls{padding-left:20px;padding-top:5px;background:#CCFFCC;BORDER-right: #CCFF66 1px solid;color:#112482;}
+.td_lsi{padding-left:2px;height:22;color:#112482;}

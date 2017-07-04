@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="gbk"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>jsp/qt/shouye.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 前台登录 -->
+  <servlet>
+   <servlet-name>qtlogin</servlet-name>
+  <servlet-class>qt.login.LoginAction</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>qtlogin</servlet-name>
+  <url-pattern>/qtlogin</url-pattern>
+</servlet-mapping>
+
+<!-- 后台登录 -->
+  <servlet>
+   <servlet-name>htlogin</servlet-name>
+  <servlet-class>ht.login.LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>htlogin</servlet-name>
+  <url-pattern>/htlogin</url-pattern>
+  </servlet-mapping>
+
+<!-- 后台 站内文章管理 -->
+<servlet>
+<servlet-name>htneiarticle</servlet-name>
+<servlet-class>ht.neiarticle.NeiArticleAction</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>htneiarticle</servlet-name>
+<url-pattern>/htneiarticle</url-pattern>
+</servlet-mapping>
+
+<!-- 后台 文章类型管理 -->
+<servlet>
+<servlet-name>articleclass</servlet-name>
+<servlet-class>ht.articleclass.ArticleClassAction</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>articleclass</servlet-name>
+<url-pattern>/articleclass</url-pattern>
+</servlet-mapping>
+
+<!-- 后台 推荐文章审核 -->
+<servlet>
+<servlet-name>shenarticle</servlet-name>
+<servlet-class>ht.shenarticle.ShenAritcleAction</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>shenarticle</servlet-name>
+<url-pattern>/shenarticle</url-pattern>
+</servlet-mapping>
+
+<!-- 后台 留言管理 留言审合及回复 -->
+<servlet>
+<servlet-name>message</servlet-name>
+<servlet-class>ht.message.MessageAction</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>message</servlet-name>
+<url-pattern>/message</url-pattern>
+</servlet-mapping>
+
+<!-- 前台个人注册 -->
+ 
+   <servlet>
+  	<servlet-name>gerenregist</servlet-name>
+  	<servlet-class>qt.zhuce.GeRenZhuCiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenregist</servlet-name>
+  	<url-pattern>/gerenregist</url-pattern>
+  </servlet-mapping>
+
+
+<!--前台个人,转框架的首页 -->
+ 
+   <servlet>
+  	<servlet-name>guanli</servlet-name>
+  	<servlet-class>qt.guanli.GuanliAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>guanli</servlet-name>
+  	<url-pattern>/guanli</url-pattern>
+  </servlet-mapping>
+  
+  <!--前台传图片 -->
+ 
+   <servlet>
+  	<servlet-name>chuanzhaopian</servlet-name>
+  	<servlet-class>qt.chuanzhaopian.zhaoPianAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>chuanzhaopian</servlet-name>
+  	<url-pattern>/chuanzhaopian</url-pattern>
+  </servlet-mapping>
+  
+    <!--后台 个人的照片审核 -->
+ 
+   <servlet>
+  	<servlet-name>gerenphone</servlet-name>
+  	<servlet-class>ht.gerenphone.GerenPhoneAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenphone</servlet-name>
+  	<url-pattern>/gerenphone</url-pattern>
+  </servlet-mapping>
+
+
+    <!--后台 个人信息管理 -->
+ 
+   <servlet>
+  	<servlet-name>gereninfo</servlet-name>
+  	<servlet-class>ht.gereninfo.GeRenInfoAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gereninfo</servlet-name>
+  	<url-pattern>/gereninfo</url-pattern>
+  </servlet-mapping>
+  
+  <!--前台 找企业的信息和职位的,信息都用这么吧字段太多了,早知道就不拆这么细了，都是上海网害的 -->
+     <servlet>
+  	<servlet-name>souzhiwei</servlet-name>
+  	<servlet-class>qt.souzhiwei.SouZhiWeiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>souzhiwei</servlet-name>
+  	<url-pattern>/souzhiwei</url-pattern>
+  </servlet-mapping>
+  
+    <!--前台 个人改密码 -->
+     <servlet>
+  	<servlet-name>gerengaimima</servlet-name>
+  	<servlet-class>qt.gerengaimima.GeRenGaiMiMaAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerengaimima</servlet-name>
+  	<url-pattern>/gerengaimima</url-pattern>
+  </servlet-mapping>
+    
+    <!--前台 投递简历 -->
+     <servlet>
+  	<servlet-name>gerentoujianli</servlet-name>
+  	<servlet-class>qt.gerentoujianli.GeRenTouJianLiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerentoujianli</servlet-name>
+  	<url-pattern>/gerentoujianli</url-pattern>
+  </servlet-mapping>
+
+    <!--前台 查看投递的简历 -->
+     <servlet>
+  	<servlet-name>kangerentoujianli</servlet-name>
+  	<servlet-class>qt.kangerentoujianli.KanGeRenTouJianLiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>kangerentoujianli</servlet-name>
+  	<url-pattern>/kangerentoujianli</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+      <!--前台 收藏企业职位信息  -->
+     <servlet>
+  	<servlet-name>gerenshoucanginfo</servlet-name>
+  	<servlet-class>qt.gerenshoucanginfo.GeRenShouCangInfoAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenshoucanginfo</servlet-name>
+  	<url-pattern>/gerenshoucanginfo</url-pattern>
+  </servlet-mapping>
+ 
+       <!--前台 看收藏企业职位信息  -->
+     <servlet>
+  	<servlet-name>kangerenshoucanginfo</servlet-name>
+  	<servlet-class>qt.kangerenshoucanginfo.KanGeRenShouCangInfoAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>kangerenshoucanginfo</servlet-name>
+  	<url-pattern>/kangerenshoucanginfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+       <!--前台 查看投个人基本信息管理，数据大工程，加油 -->
+     <servlet>
+  	<servlet-name>gerenjibenxinxi</servlet-name>
+  	<servlet-class>qt.gernjibenxinxi.GeRenJiBenXinXiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenjibenxinxi</servlet-name>
+  	<url-pattern>/gerenjibenxinxi</url-pattern>
+  </servlet-mapping>
+  
+        <!--前台 查看投个人求职意向管理，数据大工程，加油 -->
+     <servlet>
+  	<servlet-name>gerenqiuzhiyixiang</servlet-name>
+  	<servlet-class>qt.gerenqiuzhiyixiang.GeRenQiuZhiYiXiangAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenqiuzhiyixiang</servlet-name>
+  	<url-pattern>/gerenqiuzhiyixiang</url-pattern>
+  </servlet-mapping>
+  
+          <!--前台 自己看一下自己的简历，注意照片的处理,总之加油 -->
+     <servlet>
+  	<servlet-name>gerenkanjianli</servlet-name>
+  	<servlet-class>qt.gerenkanjianli.GeRenKanJianLiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenkanjianli</servlet-name>
+  	<url-pattern>/gerenkanjianli</url-pattern>
+  </servlet-mapping>
+  
+            <!--前台 看资讯，也就是看文章，我这里资讯就是文章，我做主 -->
+     <servlet>
+  	<servlet-name>souwenzhang</servlet-name>
+  	<servlet-class>qt.zhaowenzhang.ZhaoWenZhangAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>souwenzhang</servlet-name>
+  	<url-pattern>/souwenzhang</url-pattern>
+  </servlet-mapping>
+  
+              <!--前台 企业注册用的，先查省 -->
+     <servlet>
+  	<servlet-name>comzhuce</servlet-name>
+  	<servlet-class>qt.comzhuce.ComZhuCeAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comzhuce</servlet-name>
+  	<url-pattern>/comzhuce</url-pattern>
+  </servlet-mapping>
+  
+     <!--前台 企业管理首页的 -->
+     <servlet>
+  	<servlet-name>comguanli</servlet-name>
+  	<servlet-class>qt.comguanli.ComGuanLiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comguanli</servlet-name>
+  	<url-pattern>/comguanli</url-pattern>
+  </servlet-mapping>
+  
+    
+     <!--前台 企业改密码-->
+     <servlet>
+  	<servlet-name>comgaimima</servlet-name>
+  	<servlet-class>qt.comgaimima.ComGaiMiMaAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comgaimima</servlet-name>
+  	<url-pattern>/comgaimima</url-pattern>
+  </servlet-mapping>
+  
+       <!--前台 企业看个人投来的简历-->
+     <servlet>
+  	<servlet-name>comkantoujianli</servlet-name>
+  	<servlet-class>qt.comkantoudejianli.ComKanTouDeJianLiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comkantoujianli</servlet-name>
+  	<url-pattern>/comkantoujianli</url-pattern>
+  </servlet-mapping>
+ 
+ 
+        <!--前台 企业搜人才,看简历-->
+     <servlet>
+  	<servlet-name>sourencai</servlet-name>
+  	<servlet-class>qt.sourencai.SouRenCaiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sourencai</servlet-name>
+  	<url-pattern>/sourencai</url-pattern>
+  </servlet-mapping>
+          <!--前台 企业面试通知，查看也写在这里吧-->
+     <servlet>
+  	<servlet-name>mianshitongzhi</servlet-name>
+  	<servlet-class>qt.mianshitongzhi.MianShiTongZhiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mianshitongzhi</servlet-name>
+  	<url-pattern>/mianshitongzhi</url-pattern>
+  </servlet-mapping>
+
+
+          <!--前台 企业收藏人才，即人才库，查看也写在这里吧-->
+     <servlet>
+  	<servlet-name>shoucangrencai</servlet-name>
+  	<servlet-class>qt.comshoucangrencai.ComShouCangRenCaiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>shoucangrencai</servlet-name>
+  	<url-pattern>/shoucangrencai</url-pattern>
+  </servlet-mapping>
+  
+            <!--前台 个人看面试通知-->
+     <servlet>
+  	<servlet-name>gerenkanmianshitongzhi</servlet-name>
+  	<servlet-class>qt.kangerenmianshitongzhi.KanGeRenMianShiTongZhiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gerenkanmianshitongzhi</servlet-name>
+  	<url-pattern>/gerenkanmianshitongzhi</url-pattern>
+  </servlet-mapping>
+  
+              <!--前台 企业基本信息改-->
+     <servlet>
+  	<servlet-name>comjibenxinxigai</servlet-name>
+  	<servlet-class>qt.comjibenxinxi.ComJiBenXinXIAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comjibenxinxigai</servlet-name>
+  	<url-pattern>/comjibenxinxigai</url-pattern>
+  </servlet-mapping>
+  
+                <!--前台 企业 招聘信息管理-->
+     <servlet>
+  	<servlet-name>comzhaopinxinxi</servlet-name>
+  	<servlet-class>qt.comzhaopinxinxi.ComZhaoPinXinXiAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comzhaopinxinxi</servlet-name>
+  	<url-pattern>/comzhaopinxinxi</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+   <!--前台  留言管理-->
+     <servlet>
+  	<servlet-name>qtmessage</servlet-name>
+  	<servlet-class>qt.message.MessageAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>qtmessage</servlet-name>
+  	<url-pattern>/qtmessage</url-pattern>
+  </servlet-mapping>
+  
+     <!--后台  企业管理-->
+     <servlet>
+  	<servlet-name>comshen</servlet-name>
+  	<servlet-class>ht.comshen.ComShenAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>comshen</servlet-name>
+  	<url-pattern>/comshen</url-pattern>
+  </servlet-mapping>
+  
+       <!--前台  个人找回密码-->
+     <servlet>
+  	<servlet-name>zhaomima</servlet-name>
+  	<servlet-class>qt.zhaomima.ZhaoMiMaAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>zhaomima</servlet-name>
+  	<url-pattern>/zhaomima</url-pattern>
+  </servlet-mapping>
+  
+         <!--前台  企业找回密码-->
+     <servlet>
+  	<servlet-name>zhaomimacom</servlet-name>
+  	<servlet-class>qt.zhaomimacom.ZhaoMiMaComAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>zhaomimacom</servlet-name>
+  	<url-pattern>/zhaomimacom</url-pattern>
+  </servlet-mapping>
+  
+           <!--后台  企业找回密码(用初使的)-->
+     <servlet>
+  	<servlet-name>htzhaomimacom</servlet-name>
+  	<servlet-class>ht.comzhaomima.ComZhaoMiMaAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>htzhaomimacom</servlet-name>
+  	<url-pattern>/htzhaomimacom</url-pattern>
+  </servlet-mapping>
+  
+             <!--后台  管理管理员为管理授权-->
+     <servlet>
+  	<servlet-name>htadmin</servlet-name>
+  	<servlet-class>ht.admin.AdminAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>htadmin</servlet-name>
+  	<url-pattern>/htadmin</url-pattern>
+  </servlet-mapping>
+  
+               <!--后台  角色管理为角色授权-->
+     <servlet>
+  	<servlet-name>htrole</servlet-name>
+  	<servlet-class>ht.role.roleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>htrole</servlet-name>
+  	<url-pattern>/htrole</url-pattern>
+  </servlet-mapping>
+  
+                 <!--后台  权限管理-->
+     <servlet>
+  	<servlet-name>htlimit</servlet-name>
+  	<servlet-class>ht.limit.LimitAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>htlimit</servlet-name>
+  	<url-pattern>/htlimit</url-pattern>
+  </servlet-mapping>
+ <!-- 在线聊天 -->
+<servlet>
+    <servlet-name>ChatServlet</servlet-name>
+    <servlet-class>com.chat.servlet.ChatServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ChatServlet</servlet-name>
+    <url-pattern>/ChatServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 用来配fck编辑器 -->
+  	<servlet>   
+		  <servlet-name>Connector</servlet-name>   
+		  <servlet-class>com.fck.FckConnectorServlet</servlet-class>   
+		  <load-on-startup>1</load-on-startup>   
+		  <!-- 用修改过的ConnectorServlet替换原有的文件，且不用重新编译JAR包"net.fckeditor.connector.ConnectorServlet"-->   
+	 </servlet>   
+	  
+	 <servlet-mapping>   
+		  <servlet-name>Connector</servlet-name>   
+		  <url-pattern>/fckeditor/editor/filemanager/connectors/*</url-pattern>   
+	 </servlet-mapping>  
+</web-app>
